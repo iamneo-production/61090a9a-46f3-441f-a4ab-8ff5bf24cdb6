@@ -1,21 +1,21 @@
 {
     "goals" : [
         {
-            "goal-tittle" : "walking",
+            "title" : "walking",
             "description" : "100 steps a day",
-            "target-value" : 100,
-            "progress" : 0
+            "target" : 100,
+            "progress" : 20
         },
         {
-            "goal-tittle" : "books reading",
+            "tittle" : "books_reading",
             "description" : "10 papers a day",
-            "target-value" : 10,
-            "progress" : 0 
+            "target" : 10,
+            "progress" : 10
         },
         {
-            "goal-tittle" : "weight loss",
+            "tittle" : "weight-loss",
             "description" : "10 grams a day",
-            "target-value" : 10,
+            "target" : 10,
             "progress" : 0
         }
     ]

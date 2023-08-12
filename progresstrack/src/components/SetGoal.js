@@ -3,7 +3,6 @@ import {Link, useNavigate} from 'react-router-dom'
 import React, {useState, useEffect} from 'react'
 function SetGoal(){
     const [goals,setGoals] = useState({
-        UserName:'',
         title:'',
         description:'',
         target:0,
@@ -13,12 +12,11 @@ function SetGoal(){
     const navigate = useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault()
-        axios.post('http://localhost:8080/goals',goal)
+        axios.post('https://ide-ffeccbbbeccbcfdcdacaceeeddaecbbcddbdc.project.examly.io/proxy/8080/goals',goals)
         .then(res=>{
             setGoals(res.data);
             navigate('/');
-        })
-        .catch(err=>console.log(err));
+        }).catch(err=>console.log(err));
     }
     return(
         <>
@@ -27,24 +25,20 @@ function SetGoal(){
                     <h1>Add a user with goal</h1>
                     <form onsubmit={handleSubmit}>
                         <div class="mb-2">
-                            <label htmlFor="name">Name:</label>
-                            <input type="text" name="name" className="form-control" placeholder="Enter Name" onChange={e=>SetGoals({...goals, UserName:e.target.value})}/>
-                        </div>
-                        <div class="mb-2">
                             <label htmlFor="goal">Goal:</label>
-                            <input type="text" name="goal" className="form-control" placeholder="Enter Name" onChange={e=>SetGoals({...goals, title:e.target.value})}/>
+                            <input type="text" name="goal" className="form-control" placeholder="Enter Name" onChange={e=>setGoals({...goals, title:e.target.value})}/>
                         </div>
                         <div class="mb-2">
                             <label htmlFor="desc">Description:</label>
-                            <input type="text" name="desc" className="form-control" placeholder="Enter Name" onChange={e=>SetGoals({...goals, description:e.target.value})}/>
+                            <input type="text" name="desc" className="form-control" placeholder="Enter Name" onChange={e=>setGoals({...goals, description:e.target.value})}/>
                         </div>
                         <div class="mb-2">
                             <label htmlFor="target">Target:</label>
-                            <input type="Number" name="target" className="form-control" placeholder="Enter Name" onChange={e=>SetGoals({...goals, target:e.target.value})}/>
+                            <input type="Number" name="target" className="form-control" placeholder="Enter Name" onChange={e=>setGoals({...goals, target:e.target.value})}/>
                         </div>
                         <div class="mb-2">
                             <label htmlFor="progress">progress:</label>
-                            <input type="Number" name="progress" className="form-control" placeholder="Enter Name" onChange={e=>SetGoals({...goals, progress:e.target.value})}/>
+                            <input type="Number" name="progress" className="form-control" placeholder="Enter Name" onChange={e=>setGoals({...goals, progress:e.target.value})}/>
                         </div>
                         <button className='btn btn-success'>submit</button>
                         <Link to='/' className='btn btn-primary ms-3'>Back</Link>
