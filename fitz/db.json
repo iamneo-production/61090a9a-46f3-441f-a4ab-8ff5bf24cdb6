@@ -1,0 +1,19 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "title": "Walk 10,000 Steps",
+      "description": "Aiming to walk 10,000 steps daily.",
+      "targetValue": 10000,
+      "currentValue": 5000
+    },
+    {
+      "id": 2,
+      "title": "Read 10 Books",
+      "description": "Reading a total of 10 books this year.",
+      "targetValue": 10,
+      "currentValue": 3
+    }
+  ],
+  "progress": []
+}
