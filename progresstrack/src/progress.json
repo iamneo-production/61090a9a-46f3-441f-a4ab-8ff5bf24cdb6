@@ -1,0 +1,26 @@
+{
+    "users" : [
+        {
+            "username" : "sindhu",
+            "goal-tittle" : "walking",
+            "description" : "100 steps a day",
+            "target-value" : 100,
+            "progress" : 0
+        },
+        {
+            "username" : "Janu",
+            "goal-tittle" : "books reading",
+            "description" : "10 papers a day",
+            "target-value" : 10,
+            "progress" : 0 
+        },
+        {
+            "username" : "Mehika",
+            "goal-tittle" : "weight loss",
+            "description" : "10 grams a day",
+            "target-value" : 10,
+            "progress" : 0
+        }
+    ]
+    
+}
