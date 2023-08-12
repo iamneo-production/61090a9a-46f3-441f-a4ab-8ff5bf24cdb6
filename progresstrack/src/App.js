@@ -15,6 +15,7 @@ function App() {
         <Route path='/set' element={<SetGoal/>}></Route>
         <Route path='/drop' element={<DropGoal/>}></Route>
         <Route path='/update' element={<UpdateProgress/>}></Route>
+        <Route path='/updategoal' element={<></>}></Route>
       </Routes>
     </BrowserRouter>
   );

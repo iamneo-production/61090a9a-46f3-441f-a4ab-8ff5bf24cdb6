@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 function Home(){
     const [data, setData] = useState([])
     useEffect(()=>{
-        axios.get('http://localhost:8080/users')
+        axios.get('http://localhost:8080/goals')
         .then(res=>setData(res.data))
         .catch(err=>console.log(err));
     },[])
@@ -15,7 +15,6 @@ function Home(){
             <div>
                 <table class='table table-striped'>
                     <tr>
-                        <th>UserName</th>
                         <th>Goal</th>
                         <th>Description</th>
                         <th>Target</th>
@@ -25,14 +24,13 @@ function Home(){
                         {
                             data.map((d,index) => (
                                 <tr key={index}>
-                                    <td>d.UserName</td>
                                     <td>d.goal-tittle</td>
                                     <td>d.description</td>
                                     <td>d.target-value</td>
                                     <td>d.progress</td>
-                                    <td><button className="btn btn-sm btn-primary">goal edit</button></td>
-                                    <td><Link to='/update'><button className="btn btn-primary">progress edit</button></Link></td>
-                                    <td><Link to='/drop'><button className="btn btn-danger">delete goal</button></Link></td>
+                                    <td><Link to='/updategoal' className="btn btn-sm btn-primary">goal edit</Link></td>
+                                    <td><Link to='/update'className="btn btn-primary">progress edit</Link></td>
+                                    <td><Link to='/drop' className="btn btn-danger">delete goal</Link></td>
                                 </tr>
                             ))
                         }

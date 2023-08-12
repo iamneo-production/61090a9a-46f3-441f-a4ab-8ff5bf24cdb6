@@ -13,7 +13,7 @@ function SetGoal(){
     const navigate = useNavigate();
     const handleSubmit = (event) => {
         event.preventDefault()
-        axios.post('http://localhost:8080/users',goal)
+        axios.post('http://localhost:8080/goals',goal)
         .then(res=>{
             setGoals(res.data);
             navigate('/');
