@@ -1,0 +1,23 @@
+{
+    "goals" : [
+        {
+            "title" : "walking",
+            "description" : "100 steps a day",
+            "Target" : 100,
+            "progress" : 20
+        },
+        {
+            "title" : "books_reading",
+            "description" : "10 papers a day",
+            "Target" : 10,
+            "progress" : 10
+        },
+        {
+            "title" : "weight-loss",
+            "description" : "10 grams a day",
+            "Target" : 10,
+            "progress" : 0
+        }
+    ]
+    
+}
