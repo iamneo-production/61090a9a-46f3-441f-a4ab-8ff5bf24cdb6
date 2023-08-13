@@ -5,6 +5,8 @@ import Home from './components/Home';
 import SetGoal from './components/SetGoal';
 import DropGoal from './components/DropGoal';
 import UpdateProgress from './components/UpdateProgress';
+import Updategoal from './components/UpdateGoal';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -13,9 +15,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/set' element={<SetGoal/>}></Route>
-        <Route path='/drop' element={<DropGoal/>}></Route>
-        <Route path='/update' element={<UpdateProgress/>}></Route>
-        <Route path='/updategoal' element={<></>}></Route>
+        <Route path='/drop/:id' element={<DropGoal/>}></Route>
+        <Route path='/update/:id' element={<UpdateProgress/>}></Route>
+        <Route path='/updategoal/:id' element={<Updategoal/>}></Route>
       </Routes>
     </BrowserRouter>
   );

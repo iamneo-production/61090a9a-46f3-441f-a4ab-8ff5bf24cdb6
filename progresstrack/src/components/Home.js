@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from "react"
 import axios from 'axios'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 function Home(){
     const [goal, setGoal] = useState([])
     useEffect(()=>{
@@ -13,6 +13,7 @@ function Home(){
     },[])
     //console.log('hey')
     //console.log(goal[0])
+
     return(
         <>
         <h1 className="nav justify-content-center">Users with goals</h1>
@@ -42,9 +43,9 @@ function Home(){
                                             <div className="progress-bar bg-success" style={ { width: `${item.progress}%` } }>{item.progress}</div>
                                         </div>
                                     </td>
-                                    <td><Link to='/updategoal' className="btn btn-sm btn-primary">goal edit</Link></td>
-                                    <td><Link to='/update'className="btn btn-primary">progress edit</Link></td>
-                                    <td><Link to='/drop' className="btn btn-danger">delete goal</Link></td>
+                                    <td><Link to={`/updategoal/${item.id}`} className="btn btn-sm btn-primary">Goal-Edit</Link></td>
+                                    <td><Link to={`/update/${item.id}`} className="btn btn-primary">Progress-Edit</Link></td>
+                                    <td><Link to={`/drop/${item.id}`} className='btn btn-danger'>delete</Link></td>
                                 </tr>
                             ))
                         }
@@ -53,7 +54,7 @@ function Home(){
             </div>
         </div>
         </>
-    );
+    )
 }
 
 export default Home;
