@@ -34,6 +34,13 @@
       "description": "4000ml per day",
       "Target": "4000",
       "progress": 87.5
+    },
+    {
+      "id": "29616690",
+      "title": "fruits",
+      "description": "any 4 fruits in the morning and evening",
+      "Target": "4",
+      "progress": 50
     }
   ]
 }

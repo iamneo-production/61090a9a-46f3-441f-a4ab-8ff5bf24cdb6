@@ -18,8 +18,7 @@ function SetGoal(){
         console.log('hello');
         axios.post('https://ide-ffeccbbbeccbcfdcdacaceeeddaecbbcddbdc.project.examly.io/proxy/8080/goals',goals)
         .then(res=>{
-            console.log("i am in")
-            setGoals(res.data);
+            console.log(res.data)
             navigate('/');
         }).catch(err=>console.log(err));
     }
