@@ -16,7 +16,9 @@ function Home(){
     return(
         <>
         <h1 className="nav justify-content-center">Users with goals</h1>
-        <Link to='/set' className='btn btn-success'>Add goal</Link>
+        <div className="d-flex justify-content-end">
+            <Link to='/set' className='btn btn-success'>Add goal</Link>
+        </div>
         <div>
             <div>
                 <table className='table table-striped'>
@@ -34,8 +36,8 @@ function Home(){
                                 <tr key={index}>
                                     <td>{item.title}</td>
                                     <td>{item.description}</td>
-                                    <td>{item.target}</td>
-                                    <td style={{width:80}}>
+                                    <td>{item.Target}</td>
+                                    <td style={{width:100}}>
                                         <div className="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                             <div className="progress-bar bg-success" style={ { width: `${item.progress}%` } }>{item.progress}</div>
                                         </div>

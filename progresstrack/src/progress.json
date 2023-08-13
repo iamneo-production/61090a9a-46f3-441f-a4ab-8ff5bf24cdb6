@@ -3,19 +3,19 @@
         {
             "title" : "walking",
             "description" : "100 steps a day",
-            "target" : 100,
+            "Target" : 100,
             "progress" : 20
         },
         {
-            "tittle" : "books_reading",
+            "title" : "books_reading",
             "description" : "10 papers a day",
-            "target" : 10,
+            "Target" : 10,
             "progress" : 10
         },
         {
-            "tittle" : "weight-loss",
+            "title" : "weight-loss",
             "description" : "10 grams a day",
-            "target" : 10,
+            "Target" : 10,
             "progress" : 0
         }
     ]
