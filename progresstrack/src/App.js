@@ -18,6 +18,7 @@ function App() {
         <Route path='/drop/:id' element={<DropGoal/>}></Route>
         <Route path='/update/:id' element={<UpdateProgress/>}></Route>
         <Route path='/updategoal/:id' element={<Updategoal/>}></Route>
+        <Route path='/:id' element={<UpdateProgress/>}></Route>
       </Routes>
     </BrowserRouter>
   );
