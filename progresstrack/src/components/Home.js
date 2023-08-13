@@ -42,9 +42,9 @@ function Home(){
                                             <div className="progress-bar bg-success" style={ { width: `${item.progress}%` } }>{item.progress}</div>
                                         </div>
                                     </td>
-                                    <td><Link to='/updategoal' className="btn btn-sm btn-primary">goal edit</Link></td>
-                                    <td><Link to='/update'className="btn btn-primary">progress edit</Link></td>
-                                    <td><Link to='/drop' className="btn btn-danger">delete goal</Link></td>
+                                    <td><Link to={`/updategoal/${item.id}`} className="btn btn-sm btn-primary">goal edit</Link></td>
+                                    <td><Link to={`/update/${item.id}`} className="btn btn-primary">progress edit</Link></td>
+                                    <td><Link to={`/drop/${item.id}`} className="btn btn-danger">delete goal</Link></td>
                                 </tr>
                             ))
                         }

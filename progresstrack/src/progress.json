@@ -1,23 +1,39 @@
 {
-    "goals" : [
-        {
-            "title" : "walking",
-            "description" : "100 steps a day",
-            "Target" : 100,
-            "progress" : 20
-        },
-        {
-            "title" : "books_reading",
-            "description" : "10 papers a day",
-            "Target" : 10,
-            "progress" : 10
-        },
-        {
-            "title" : "weight-loss",
-            "description" : "10 grams a day",
-            "Target" : 10,
-            "progress" : 0
-        }
-    ]
-    
+  "goals": [
+    {
+      "id": 1,
+      "title": "walking",
+      "description": "100 steps a day",
+      "Target": 100,
+      "progress": 20
+    },
+    {
+      "id": 2,
+      "title": "books_reading",
+      "description": "10 papers a day",
+      "Target": 10,
+      "progress": 10
+    },
+    {
+      "id": 3,
+      "title": "weight-loss",
+      "description": "10 grams a day",
+      "Target": 10,
+      "progress": 0
+    },
+    {
+      "id": "c800080b",
+      "title": "running ",
+      "description": "40 minutes a day",
+      "Target": "40",
+      "progress": "20"
+    },
+    {
+      "id": "3e248a63",
+      "title": "drinking-water",
+      "description": "4000ml per day",
+      "Target": "4000",
+      "progress": 87.5
+    }
+  ]
 }
