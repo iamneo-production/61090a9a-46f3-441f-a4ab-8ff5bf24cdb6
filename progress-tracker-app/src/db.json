@@ -1,0 +1,39 @@
+{
+  "goals": [
+    {
+      "id": 1,
+      "title": "Steps walked",
+      "description": "Walk 5000 Steps daily",
+      "targetValue": "5000",
+      "currentValue": "3000"
+    },
+    {
+      "id": 2,
+      "title": "Books read",
+      "description": "Read 10 books within a month",
+      "targetValue": "10",
+      "currentValue": "9"
+    },
+    {
+      "id": 3,
+      "title": "Weight loss",
+      "description": "Lose 4 kg in two months",
+      "targetValue": "4",
+      "currentValue": "2"
+    },
+    {
+      "id": 4,
+      "title": "Save money",
+      "description": "Save Rs.30000 within six months",
+      "targetValue": "30000",
+      "currentValue": "23000"
+    },
+    {
+      "id": 5,
+      "title": "Complete yoga challenge",
+      "description": "Complete 30-Day Yoga Challenge",
+      "targetValue": "30",
+      "currentValue": "11"
+    }
+  ]
+}
